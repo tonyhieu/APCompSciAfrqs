@@ -26,7 +26,7 @@ public class 2014FRQ {
     public static boolean isMountain (int[] array) {
         int peak = getPeakIndex(array);
         if (peak != -1) 
-            return peak.isIncreasing(array, peak) && peak.isDecreasing(array, peak);
+            return isIncreasing(array, peak) && isDecreasing(array, peak);
         return false;
     }
     //3a
