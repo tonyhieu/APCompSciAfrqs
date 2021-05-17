@@ -31,7 +31,7 @@ public class 2014FRQ {
     }
     //3a
     private double computeTemp (int row, int col) {
-        if (row == 0 || row == temps.length - 1 || col == 0 || col == temps[0].length) 
+        if (row == 0 || row == temps.length - 1 || col == 0 || col == temps[0].length - 1) 
             return temp[row][col];
         return ( (temp[row-1][col] + temp[row+1][col] + temp[row][col-1] + temp[row][col+1])/4 );
     }
