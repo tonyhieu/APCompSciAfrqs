@@ -5,7 +5,7 @@ public class 2014FRQ {
     }
     //1b
     private String[] mixedWords (String[] words) {
-        for (int i = 0; i < words.length/2; i++) {
+        for (int i = 0; i < words.length; i += 2) {
             String w1 = recombine(words[i], words[i+1]);
             String w2 = recombine(words[i+1], words[i]);
             words[i] = w1;
@@ -70,7 +70,7 @@ public class 2014FRQ {
     //4b
     public void recordScores (int[] stuScores) {
         boolean b;
-        for (int i = 0; i < stuScores.length; i++) 
-            b = record(i);
+        for (int score : stuScores) 
+            b = record(score);
     }
 }
